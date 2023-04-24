@@ -1,0 +1,11 @@
+---
+- hosts: swarm-master
+  become: true
+  become_user: ubuntu
+
+  tasks:
+    - name: Initialize the cluster
+      shell: docker swarm init --advertise-addr 172.31.38.135 >> cluster_initialized.txt
+      args:
+        chdir: $HOME
+        creates: cluster_initialized.txt

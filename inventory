@@ -1,0 +1,6 @@
+swarm-master ansible_host=ec2-18-159-213-24.eu-central-1.compute.amazonaws.com ansible_ssh_user=ubuntu ansible_ssh_private_key_file=/Users/ihor.sochyvets/.ssh/isochau61-aws-free-tier-04-2023.pem
+worker1 ansible_host=ec2-54-93-150-186.eu-central-1.compute.amazonaws.com ansible_ssh_user=ubuntu ansible_ssh_private_key_file=/Users/ihor.sochyvets/.ssh/isochau61-aws-free-tier-04-2023.pem
+worker2 ansible_host=ec2-18-197-145-174.eu-central-1.compute.amazonaws.com ansible_ssh_user=ubuntu ansible_ssh_private_key_file=/Users/ihor.sochyvets/.ssh/isochau61-aws-free-tier-04-2023.pem
+[workers]
+worker1
+worker2
